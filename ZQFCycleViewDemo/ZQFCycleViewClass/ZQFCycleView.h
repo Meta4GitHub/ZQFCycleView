@@ -17,7 +17,7 @@
 - (NSInteger)countOfCycleView:(ZQFCycleView *)cycleView;
 
 @optional
-//设置imageview
+//设置imageview-这里可以使用SDImageView 等等第三方库哦
 - (void)cycleView:(ZQFCycleView *)cycleView willDisplayImageView:(UIImageView *)imageView index:(NSInteger)index;
 
 //滑动停止的时候显示标签
