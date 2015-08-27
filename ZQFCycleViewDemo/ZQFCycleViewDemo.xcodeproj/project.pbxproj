@@ -24,7 +24,7 @@
 		9653D2B31B62065D006D83C2 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9653D2A91B62065D006D83C2 /* 5.jpg */; };
 		9653D2B41B62065D006D83C2 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9653D2AA1B62065D006D83C2 /* 6.jpg */; };
 		9653D2B51B62065D006D83C2 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9653D2AB1B62065D006D83C2 /* 7.jpg */; };
-		96ACED441B8EB11D00A316C3 /* ZQFCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ACED431B8EB11D00A316C3 /* ZQFCycleView.m */; };
+		96ACED481B8EB1B900A316C3 /* ZQFCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ACED471B8EB1B900A316C3 /* ZQFCycleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +61,8 @@
 		9653D2A91B62065D006D83C2 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 		9653D2AA1B62065D006D83C2 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
 		9653D2AB1B62065D006D83C2 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
-		96ACED421B8EB11D00A316C3 /* ZQFCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQFCycleView.h; sourceTree = "<group>"; };
-		96ACED431B8EB11D00A316C3 /* ZQFCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQFCycleView.m; sourceTree = "<group>"; };
+		96ACED461B8EB1B900A316C3 /* ZQFCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQFCycleView.h; sourceTree = "<group>"; };
+		96ACED471B8EB1B900A316C3 /* ZQFCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQFCycleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 		9653D26B1B61D822006D83C2 = {
 			isa = PBXGroup;
 			children = (
-				96ACED411B8EB11D00A316C3 /* ZQFCycleViewClass */,
+				96ACED451B8EB1B900A316C3 /* ZQFCycleViewClass */,
 				9653D2A11B62065D006D83C2 /* Img */,
 				9653D2761B61D822006D83C2 /* ZQFCycleViewDemo */,
 				9653D2901B61D822006D83C2 /* ZQFCycleViewDemoTests */,
@@ -161,13 +161,14 @@
 			path = Img;
 			sourceTree = "<group>";
 		};
-		96ACED411B8EB11D00A316C3 /* ZQFCycleViewClass */ = {
+		96ACED451B8EB1B900A316C3 /* ZQFCycleViewClass */ = {
 			isa = PBXGroup;
 			children = (
-				96ACED421B8EB11D00A316C3 /* ZQFCycleView.h */,
-				96ACED431B8EB11D00A316C3 /* ZQFCycleView.m */,
+				96ACED461B8EB1B900A316C3 /* ZQFCycleView.h */,
+				96ACED471B8EB1B900A316C3 /* ZQFCycleView.m */,
 			);
-			path = ZQFCycleViewClass;
+			name = ZQFCycleViewClass;
+			path = ../ZQFCycleViewClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9653D2801B61D822006D83C2 /* ViewController.m in Sources */,
-				96ACED441B8EB11D00A316C3 /* ZQFCycleView.m in Sources */,
+				96ACED481B8EB1B900A316C3 /* ZQFCycleView.m in Sources */,
 				9653D27D1B61D822006D83C2 /* AppDelegate.m in Sources */,
 				9653D27A1B61D822006D83C2 /* main.m in Sources */,
 			);
