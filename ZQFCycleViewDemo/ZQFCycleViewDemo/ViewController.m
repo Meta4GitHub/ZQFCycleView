@@ -27,23 +27,24 @@
     }
 
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
-    self.cycleView = [[ZQFCycleView alloc] initWithFrame:CGRectMake(0, 20, width, 180)];
+    
+    self.cycleView = [[ZQFCycleView alloc] initWithFrame:CGRectMake(0, 20, width, 180) delegate:self];
     _cycleView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleWidth;
-    _cycleView.delegate = self;
     [self.view addSubview:_cycleView];
-    [_cycleView reload];//一定要执行此方法，否则图片将不会显示
+    //[_cycleView startPlayWithTimeInterval:5];
 
 }
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.cycleView startPlayWithTimeInterval:5];
+    [self.cycleView startPlayWithTimeInterval:5];//轮播图开始播放
+
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    [self.cycleView stopPlay];
+    [self.cycleView stopPlay];//控制器消失的时候记得停止轮播图的定时器，否则可能出现内存泄露
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -60,6 +61,7 @@
 
 //设置imageview
 - (void)cycleView:(ZQFCycleView *)cycleView willDisplayImageView:(UIImageView *)imageView index:(NSInteger)index{
+    //如果需要网络加载，这里可以使用第三方，比如SDImage等等
     imageView.image = self.dataArr[index];
 }
 

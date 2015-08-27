@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>AB7B9D06-7E81-403E-B644-13D1C2E80015</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>ZQFCycleViewDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>865E51E9D5DDCFFBAB692C232D0571369C4BE680</key>
 		<string>https://github.com/zengqingf/ZQFCycleView.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ZQFCycleViewDemo/ZQFCycleViewDemo.xcodeproj/project.xcworkspace</string>
+	<string>ZQFCycleViewDemo/ZQFCycleViewDemo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>865E51E9D5DDCFFBAB692C232D0571369C4BE680</key>
