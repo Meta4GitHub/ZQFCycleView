@@ -14,7 +14,6 @@
 		9653D2851B61D822006D83C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9653D2841B61D822006D83C2 /* Images.xcassets */; };
 		9653D2881B61D822006D83C2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9653D2861B61D822006D83C2 /* LaunchScreen.xib */; };
 		9653D2941B61D823006D83C2 /* ZQFCycleViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9653D2931B61D823006D83C2 /* ZQFCycleViewDemoTests.m */; };
-		9653D2A01B61D875006D83C2 /* ZQFCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9653D29F1B61D875006D83C2 /* ZQFCycleView.m */; };
 		9653D2AC1B62065D006D83C2 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9653D2A21B62065D006D83C2 /* 1.jpg */; };
 		9653D2AD1B62065D006D83C2 /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9653D2A31B62065D006D83C2 /* 11.jpg */; };
 		9653D2AE1B62065D006D83C2 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9653D2A41B62065D006D83C2 /* 2.jpg */; };
@@ -25,6 +24,7 @@
 		9653D2B31B62065D006D83C2 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9653D2A91B62065D006D83C2 /* 5.jpg */; };
 		9653D2B41B62065D006D83C2 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9653D2AA1B62065D006D83C2 /* 6.jpg */; };
 		9653D2B51B62065D006D83C2 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9653D2AB1B62065D006D83C2 /* 7.jpg */; };
+		96ACED441B8EB11D00A316C3 /* ZQFCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ACED431B8EB11D00A316C3 /* ZQFCycleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,6 @@
 		9653D28D1B61D822006D83C2 /* ZQFCycleViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZQFCycleViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9653D2921B61D822006D83C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9653D2931B61D823006D83C2 /* ZQFCycleViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQFCycleViewDemoTests.m; sourceTree = "<group>"; };
-		9653D29E1B61D875006D83C2 /* ZQFCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQFCycleView.h; sourceTree = "<group>"; };
-		9653D29F1B61D875006D83C2 /* ZQFCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQFCycleView.m; sourceTree = "<group>"; };
 		9653D2A21B62065D006D83C2 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		9653D2A31B62065D006D83C2 /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
 		9653D2A41B62065D006D83C2 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
@@ -63,6 +61,8 @@
 		9653D2A91B62065D006D83C2 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 		9653D2AA1B62065D006D83C2 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
 		9653D2AB1B62065D006D83C2 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		96ACED421B8EB11D00A316C3 /* ZQFCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQFCycleView.h; sourceTree = "<group>"; };
+		96ACED431B8EB11D00A316C3 /* ZQFCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQFCycleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +86,8 @@
 		9653D26B1B61D822006D83C2 = {
 			isa = PBXGroup;
 			children = (
+				96ACED411B8EB11D00A316C3 /* ZQFCycleViewClass */,
 				9653D2A11B62065D006D83C2 /* Img */,
-				9653D29D1B61D848006D83C2 /* ZQFCycleViewClass */,
 				9653D2761B61D822006D83C2 /* ZQFCycleViewDemo */,
 				9653D2901B61D822006D83C2 /* ZQFCycleViewDemoTests */,
 				9653D2751B61D822006D83C2 /* Products */,
@@ -144,15 +144,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9653D29D1B61D848006D83C2 /* ZQFCycleViewClass */ = {
-			isa = PBXGroup;
-			children = (
-				9653D29E1B61D875006D83C2 /* ZQFCycleView.h */,
-				9653D29F1B61D875006D83C2 /* ZQFCycleView.m */,
-			);
-			path = ZQFCycleViewClass;
-			sourceTree = "<group>";
-		};
 		9653D2A11B62065D006D83C2 /* Img */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +159,15 @@
 				9653D2A51B62065D006D83C2 /* 22.jpg */,
 			);
 			path = Img;
+			sourceTree = "<group>";
+		};
+		96ACED411B8EB11D00A316C3 /* ZQFCycleViewClass */ = {
+			isa = PBXGroup;
+			children = (
+				96ACED421B8EB11D00A316C3 /* ZQFCycleView.h */,
+				96ACED431B8EB11D00A316C3 /* ZQFCycleView.m */,
+			);
+			path = ZQFCycleViewClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9653D2801B61D822006D83C2 /* ViewController.m in Sources */,
-				9653D2A01B61D875006D83C2 /* ZQFCycleView.m in Sources */,
+				96ACED441B8EB11D00A316C3 /* ZQFCycleView.m in Sources */,
 				9653D27D1B61D822006D83C2 /* AppDelegate.m in Sources */,
 				9653D27A1B61D822006D83C2 /* main.m in Sources */,
 			);
@@ -478,6 +478,7 @@
 				9653D2991B61D823006D83C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9653D29A1B61D823006D83C2 /* Build configuration list for PBXNativeTarget "ZQFCycleViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +487,7 @@
 				9653D29C1B61D823006D83C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
