@@ -1,5 +1,5 @@
 # ZQFCycleView
-纯代码写出来的无限轮播图，可以轻松的使用第三方比如SDImage等异步加载
+纯代码写出来的无限轮播图，可以轻松的使用第三方比如SDImage等异步加载轮播图上的图片
 
 ---
 作者的新浪微博是 [@爱编程的小福子](http://weibo.com/zengqingf) 记得关注我哦！
@@ -36,8 +36,6 @@ self.cycleView = [[ZQFCycleView alloc] initWithFrame:CGRectMake(0, 20, width, 18
     NSLog(@"%@", [NSString stringWithFormat:@"当前点击的是：%ld", index]);
 }
 ```
-
-    GET http://example.com?foo=bar&baz[]=1&baz[]=2&baz[]=3
 
 #### 开始播放
 
