@@ -3,6 +3,7 @@
 //
 //  iOS上的简单无限轮播图
 //  gitHub地址：https://github.com/zengqingf/ZQFCycleView
+//  新浪微博：@爱编程的小福子 http://weibo.com/zengqingf
 //
 //  Created by 曾庆福 on 15/7/24.
 //  Copyright (c) 2015年 zengqingfu. All rights reserved.

@@ -27,7 +27,6 @@
     }
 
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
-    
     self.cycleView = [[ZQFCycleView alloc] initWithFrame:CGRectMake(0, 20, width, 180) delegate:self];
     _cycleView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleWidth;
     [self.view addSubview:_cycleView];
