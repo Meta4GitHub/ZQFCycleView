@@ -31,12 +31,27 @@
     self.cycleView = [[ZQFCycleView alloc] initWithFrame:CGRectMake(0, 20, width, 180) delegate:self];
     _cycleView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleWidth;
     [self.view addSubview:_cycleView];
-    [_cycleView startPlayWithTimeInterval:5];
+    
+    //如果不在viewWillDisappear 和 viewWillAppear控制播放的话，应该使用下面一行手动播放
+    //[_cycleView startPlayWithTimeInterval:5];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.cycleView startPlayWithTimeInterval:5];//轮播图开始播放
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.cycleView stopPlay];//控制器消失的时候记得停止轮播图的定时器，否则可能出现内存泄露
 }
 
 
