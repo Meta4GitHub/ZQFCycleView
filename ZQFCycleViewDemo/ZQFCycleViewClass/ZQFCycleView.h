@@ -23,7 +23,7 @@
 @optional
 //设置imageview-这里可以使用SDImageView 等等第三方库哦
 - (void)cycleView:(ZQFCycleView *)cycleView willDisplayImageView:(UIImageView *)imageView index:(NSInteger)index;
-//滑动停止的时候显示标签
+//滑动停止的时候显示标签//一旦遵循了这个代理，即意味着会显示标题,不遵循此代理不显示标题
 - (void)cycleView:(ZQFCycleView *)cycleView didDisplayTitleLabel:(UILabel *)titleLabel index:(NSInteger)index;
 //点击触发的
 - (void)cycleView:(ZQFCycleView *)cycleView didTouchImageView:(UIImageView *)imageView  titleLabel:(UILabel *)titleLabel index:(NSInteger)index;

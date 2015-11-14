@@ -52,6 +52,11 @@
 }
 
 //配置子视图
+//此方法向创建一个backView并且添加了点击手势，然后添加到self上
+//创建scrollView并且添加到backView上
+//创建image1、2、3并且添加到scrollView上
+//创建pageControl添加到backView上
+//根据代理判断是否显示标题
 - (void)configSubView
 {
     //设置手势
@@ -113,7 +118,6 @@
 - (void)timerAction:(id)sender
 {
     if (self.scrollView.isDragging || self.scrollView.isDecelerating) {
-        
         return;//拖拽或者正在动的过程中忽略定时器作用
     }else {
         [self nextPage];
@@ -206,9 +210,10 @@
 //定时器开始播放
 - (BOOL)startPlayWithTimeInterval:(NSTimeInterval)ti;
 {
-    if (ti<0.001) {
-        return NO;
-    }
+//    if (ti<0.001) {
+//        return NO;
+//    }
+    NSAssert(ti > 0.001, @"定时器时间过短");
     _ti = ti;
     _totalCount = [_delegate countOfCycleView:self];
     if(_totalCount <= 0){

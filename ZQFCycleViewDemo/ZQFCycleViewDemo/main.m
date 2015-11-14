@@ -2,8 +2,8 @@
 //  main.m
 //  ZQFCycleViewDemo
 //
-//  Created by Work on 15/7/24.
-//  Copyright (c) 2015年 zengqingfu. All rights reserved.
+//  Created by zqf on 15/11/15.
+//  Copyright © 2015年 zengqingfu. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
